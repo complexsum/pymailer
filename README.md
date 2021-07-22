@@ -1,9 +1,8 @@
 ## About
 
-This package servers purpose of sending the email messages to the clients. 
-Other modules can use the utility functions and classes provided in this package for sending email messsages.
+This package servers purpose of sending the email messages in a simplified way. 
 
-## Developer usage guide
+## Usage guide
 
 1. ### Importing the module
 
