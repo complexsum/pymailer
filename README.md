@@ -1,48 +1,49 @@
 ## About
 
-This package servers purpose of sending the email messages to the clients in a simplified way. 
+This package servers purpose of sending the email messages to the clients. 
+Other modules can use the utility functions and classes provided in this package for sending email messsages.
 
-## Usage guide
+## Developer usage guide
 
-### Importing the module
+1. ### Importing the module
 
-```py
-from messaging import EmailService, build_message
-```
+    ```py
+    from messaging import EmailService, build_message
+    ```
 
-### Build an email message
-Simple `EmailMessage`
+2. ### Build an email message
+   * Simple `EmailMessage`
 
-```py
-message = build_message(fr_addr='john@company.com', # Sender
-                        to_addrs=['peter@abc.com'], # List of recipients
-                        cc_addrs=['emma@abc.com' ], # List of secondary recipents
-                        subject='Subject of Email',
-                        content="Plain text contents of the email")
-```
+      ```python3
+      message = build_message(fr_addr='john@company.com', # Sender
+                              to_addrs=['peter@abc.com'], # List of recipients
+                              cc_addrs=['emma@abc.com' ], # List of secondary recipents
+                              subject='Subject of Email',
+                              content="Plain text contents of the email")
+      ```
 
-Extended `EmailMessage` with html body and attachments
+   * Extended `EmailMessage` with html body and attachments
 
-```py
-message = build_message(fr_addr='john@company.com', # Sender
-                        to_addrs=['peter@abc.com'], # List of recipients
-                        cc_addrs=['emma@abc.com' ], # List of secondary recipents
-                        subject='Subject of Email',
-                        content="Plain text contents of the email",
-                        htmlcontent="<h1>Fancy</h1> html content of the email",
-                        attachments=['absolute path to the attachment'])
-```
+      ```py
+      message = build_message(fr_addr='john@company.com', # Sender
+                              to_addrs=['peter@abc.com'], # List of recipients
+                              cc_addrs=['emma@abc.com' ], # List of secondary recipents
+                              subject='Subject of Email',
+                              content="Plain text contents of the email",
+                              htmlcontent="<h1>Fancy</h1> html content of the email",
+                              attachments=['absolute path to the attachment'])
+      ```
 
-### Instantiate `EmailSevice` and send the `message`
+3. ### Instantiate `EmailSevice` and send the `message`
 
-```py
-service = EmailService(host='smtp.gmail.com',
-                       port=587,
-                       user='john@company.com',
-                       password='This is super secret')
+    ```py
+    service = EmailService(host='smtp.gmail.com',
+                           port=587,
+                           user='john@company.com',
+                           password='This is super secret')
 
-service.sendmail(message)
-```
+    service.sendmail(message)
+    ```
 
 
 ### Additional notes:
