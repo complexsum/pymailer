@@ -12,7 +12,7 @@ pip install py3mailer
 1. ### Importing the module
 
     ```py
-    from messaging import EmailService, build_message
+    from pymailer import EmailService, build_message
     ```
 
 2. ### Build an email message
