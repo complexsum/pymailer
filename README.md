@@ -3,6 +3,10 @@ A simple and convinient way to send emails in python
 
 ## Installation
 
+```sh
+pip install py3mailer
+```
+
 ## Usage guide
 
 1. ### Importing the module
