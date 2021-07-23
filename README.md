@@ -1,6 +1,7 @@
 ## About
+A simple and convinient way to send emails in python
 
-This package servers purpose of sending the email messages in a simplified way. 
+## Installation
 
 ## Usage guide
 
