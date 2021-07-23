@@ -1,5 +1,5 @@
 ## About
-A simple and convinient way to send emails ✉️ in python 🐍
+A simple and convenient way to send emails ✉️ in python 🐍
 
 ## Installation
 
